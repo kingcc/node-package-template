@@ -1,6 +1,6 @@
 {
     "include": ["source"],
-    "exclude": ["node_modules", "**/*.spec.ts"],
+    "exclude": ["node_modules"],
     "compilerOptions": {
         "target": "es2017",
         "module": "CommonJS",

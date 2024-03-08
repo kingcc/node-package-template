@@ -15,10 +15,10 @@
     "build/**/*"
   ],
   "scripts": {
-    "test": "find ./source -name '*.spec.ts' -exec node --loader @swc-node/register/esm --test {} \\;",
+    "test": "find ./source -name '*.test.ts' -exec node --loader @swc-node/register/esm --test {} \\;",
     "clear": "rm -rf build",
-    "build": "npm run clear && tsc && tsc-alias",
-    "build:watch": "npm run clear && tsc -w && tsc-alias -w",
+    "build": "npm run clear && tsc -p tsconfig.build.json && tsc-alias",
+    "build:watch": "npm run clear && tsc -p tsconfig.build.json -w && tsc-alias -w",
     "prepublishOnly": "npm run build && npm version patch",
     "format": "prettier source/**/*.ts -w"
   },
