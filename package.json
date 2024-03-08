@@ -1,0 +1,36 @@
+{
+  "name": "name",
+  "description": "",
+  "repository": "",
+  "homepage": "",
+  "author": "kingcc",
+  "keywords": [],
+  "private": true,
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=21"
+  },
+  "main": "./build/main.js",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "test": "find ./source -name '*.spec.ts' -exec node --loader @swc-node/register/esm --test {} \\;",
+    "clear": "rm -rf build",
+    "build": "npm run clear && tsc && tsc-alias",
+    "build:watch": "npm run clear && tsc -w && tsc-alias -w",
+    "prepublishOnly": "npm run build && npm version patch",
+    "format": "prettier source/**/*.ts -w"
+  },
+  "devDependencies": {
+    "@swc-node/register": "^1.9.0",
+    "@swc/core": "^1.4.5",
+    "@types/node": "^20.11.25",
+    "prettier": "^2.3.0",
+    "tsc-alias": "^1.2.11",
+    "typescript": "next"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.1"
+  }
+}
