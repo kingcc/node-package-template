@@ -1,6 +1,6 @@
-# Node.js Package Template
+# <package_name>
 
-Short description of your package which explains what it does or its intended use.
+<package_description>
 
 ## Install
 
@@ -9,7 +9,7 @@ This package requires Node.js version X or higher.
 To install this package, use npm:
 
 ```bash
-npm install your-package-name
+npm install <package_name>
 ```
 
 ## Usage
@@ -17,31 +17,22 @@ npm install your-package-name
 After installation, you can use the package in your project by requiring it:
 
 ```javascript
-const yourPackageName = require("your-package-name")
-
-// Example usage
-yourPackageName.doSomethingCool()
+const <package_name> = require("<package_name>")
 ```
 
 If you are using ES6 or TypeScript:
 
 ```javascript
-import { doSomethingCool } from "your-package-name"
-
-// Example usage
-doSomethingCool()
+import <package_name> from "<package_name>"
 ```
 
 ## License
 
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the <package_license>.
 
 ## Author
 
--   Name: Your Name
--   Email: your.email@example.com
--   GitHub: [Your GitHub](https://github.com/your-github)
--   Twitter: [Your Twitter](https://twitter.com/your-twitter)
+[<package_author_name>](https://github.com/<package_author_name>)
 
 ---
 
