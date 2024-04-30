@@ -17,7 +17,7 @@ npm install <package_name>
 After installation, you can use the package in your project by requiring it:
 
 ```javascript
-const <package_name> = require("<package_name>")
+const { ... } = require("<package_name>")
 ```
 
 If you are using ES6 or TypeScript:
