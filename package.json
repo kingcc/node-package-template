@@ -11,7 +11,8 @@
   },
   "main": "./build/main.js",
   "files": [
-    "build/**/*"
+    "build/**/*.js",
+    "build/**/*.ts"
   ],
   "scripts": {
     "test": "find ./source -name '*.test.ts' -exec node --loader @swc-node/register/esm --test {} \\;",
