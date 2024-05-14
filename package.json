@@ -5,7 +5,6 @@
   "homepage": "https://github.com/<package_author_name>/<package_name>",
   "author": "<package_author_name>",
   "keywords": [],
-  "private": true,
   "version": "0.0.1",
   "engines": {
     "node": ">=21"
@@ -18,7 +17,7 @@
     "test": "find ./source -name '*.test.ts' -exec node --loader @swc-node/register/esm --test {} \\;",
     "build": "tsc -p tsconfig.build.json && tsc-alias",
     "build:watch": "tsc -p tsconfig.build.json -w && tsc-alias -w",
-    "prepublishOnly": "npm run test && npm run build && npm version patch",
+    "prepublishOnly": "npm run test && npm run build",
     "format": "prettier source/**/*.ts -w"
   },
   "devDependencies": {
