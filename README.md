@@ -10,14 +10,10 @@
 
 ### Node.js
 
-Install using [npm][npm] or [yarn][yarn]:
+Install using `npm` or other package managers:
 
 ```
 npm install <package_author_name>/<package_name>
-
-# or
-
-yarn add <package_author_name>/<package_name>
 ```
 
 Import into your Node.js project:
