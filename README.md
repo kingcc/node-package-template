@@ -74,7 +74,7 @@ import { <package_name> } from "https://cdn.skypack.dev/<package_author_name>/<p
 
 ## License
 
-This project is licensed under the <package_license>.
+This project is licensed under the [GPL-3.0](./LICENCE).
 
 ## Author
 

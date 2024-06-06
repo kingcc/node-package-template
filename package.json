@@ -6,6 +6,7 @@
   "author": "<package_author_name>",
   "keywords": [],
   "version": "0.0.1",
+  "license": "GPL-3.0",
   "engines": {
     "node": ">=21"
   },
